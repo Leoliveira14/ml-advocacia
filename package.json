@@ -1,0 +1,14 @@
+{
+  "name": "site-ml-advocacia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site institucional e funil de captação da M&L Advocacia e Assessoria",
+  "main": "server.js",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning server.js",
+    "test": "node --disable-warning=ExperimentalWarning tests/teste-api.js"
+  },
+  "license": "UNLICENSED"
+}

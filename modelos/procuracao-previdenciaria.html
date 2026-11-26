@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Procuração previdenciária</title>
+<!--
+  MODELO — revise o texto com o(a) advogado(a) responsável antes de usar.
+  Campos preenchidos automaticamente pelo painel:
+    {{nome}} {{cidade}} {{uf}} {{data}}                       dados do contato
+    {{advogado_nome}} {{advogado_oab}} {{escritorio_endereco}} definidos no .env (MODELO_*)
+  Para criar outro modelo (ex.: contrato de honorários), copie este arquivo para a
+  pasta modelos/ com outro nome e mude o <title> e o texto. Ele aparece sozinho no painel.
+-->
+<style>
+  body { font-family: Georgia, "Times New Roman", serif; font-size: 12pt; line-height: 1.6; color: #111; margin: 2.5cm; }
+  h1 { font-size: 15pt; text-align: center; letter-spacing: .12em; margin: 0 0 1.2cm; }
+  p { text-align: justify; margin: 0 0 .5cm; }
+  .assinatura { margin-top: 2cm; text-align: center; }
+  .rodape { margin-top: 1.5cm; font-size: 9pt; color: #555; text-align: center; }
+</style>
+</head>
+<body>
+  <h1>PROCURAÇÃO</h1>
+
+  <p><b>OUTORGANTE:</b> {{nome}}, residente em {{cidade}}/{{uf}}, identificado(a) pelos dados pessoais e documento
+  (CPF) confirmados no momento da assinatura eletrônica deste instrumento.</p>
+
+  <p><b>OUTORGADO(A):</b> {{advogado_nome}}, advogado(a) inscrito(a) na {{advogado_oab}}, com escritório em
+  {{escritorio_endereco}}.</p>
+
+  <p><b>PODERES:</b> pelo presente instrumento, o(a) OUTORGANTE nomeia e constitui o(a) OUTORGADO(A) seu(sua)
+  procurador(a), a quem confere os poderes da cláusula <i>ad judicia et extra</i>, para representá-lo(a) perante o
+  Instituto Nacional do Seguro Social (INSS) e demais órgãos da administração pública, bem como em qualquer juízo,
+  instância ou tribunal, podendo requerer benefícios previdenciários e assistenciais, inclusive o salário-maternidade,
+  acompanhar processos administrativos, apresentar recursos, cumprir exigências, obter cópias de processos, extratos e
+  documentos, propor as ações cabíveis e nelas atuar, transigir, desistir, receber e dar quitação, podendo ainda
+  substabelecer, com ou sem reserva de poderes.</p>
+
+  <p>{{cidade}}/{{uf}}, {{data}}.</p>
+
+  <p class="assinatura">Assinado eletronicamente por {{nome}}<br>(assinatura eletrônica nos termos da Lei nº 14.063/2020)</p>
+
+  <p class="rodape">Documento enviado para assinatura eletrônica pelo Autentique.</p>
+</body>
+</html>
